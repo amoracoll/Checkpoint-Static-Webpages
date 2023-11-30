@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #eee;
+}
+
+.container {
+    margin: 20px auto;
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+.box {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column; /* Ajusta la dirección del flujo a columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: flex-start; /* Ajusta la alineación vertical a la parte superior */
+}
+
+/* Estilos específicos para el texto dentro de .box */
+.box img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.box:hover img{
+    border: 2px solid red;
+}
+
+.box h1 {
+    font-size: 18px; /* Ajusta el tamaño del texto según tus necesidades */
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 1.2; /* Ajusta la altura de línea para que el texto se ajuste mejor */
+    margin-bottom: 10px; /* Añade un espacio inferior para separar del siguiente elemento */
+    margin-top: 0; /* Asegura que no haya margen superior para la etiqueta h1 */
+}
+
+.box span {
+    font-size: 14px; /* Ajusta el tamaño del texto según tus necesidades */
+    text-align: center; /* Centra el texto horizontalmente */
+    line-height: 1.2; /* Ajusta la altura de línea para que el texto se ajuste mejor */
+    margin: 0; /* Elimina márgenes predeterminados que podrían afectar el ajuste */
+}
+
+h1{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
